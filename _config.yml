@@ -1,8 +1,7 @@
 title: Popup tweets
 description: Minimal plugin for popup tweets window
 show_downloads: true
-url: http://korquad.github.io
-baseurl: "" #change it according to your repository name
+baseurl: "http://korquad.github.io" #change it according to your repository name
 
 
 code: https://github.com/junlulocky/PopupTweets
