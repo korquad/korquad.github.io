@@ -1,146 +1,38 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Popup tweets by </title>
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="/PopupTweets/assets/css/style.css?v=">
-    <link rel="stylesheet" href="/PopupTweets//assets/css/junpopup.css?v=">
-    <link rel="stylesheet" href="/PopupTweets/assets/css/toolkit.css?v=">
-    <!-- <link rel="stylesheet" href="/assets/css/junpopup.css"> -->
-    <!-- <link rel="stylesheet" href="/assets/css/toolkit.css"> -->
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Popup tweets</h1>
-        <p>Minimal plugin for popup tweets window</p>
+## Minimal plugin for popup tweet
+This is a plugin that you can put a popup panel that holds your tweets
 
-        
+### Demo
 
-        
+`Here is a demo`_ of `sample effect` 
 
-        
-          <ul>
-            <li><a href="https://github.com/junlulocky/PopupTweets">Download <strong>ZIP File</strong></a></li>
-            <li><a href="https://github.com/junlulocky/PopupTweets">Download <strong>TAR File</strong></a></li>
-            <li><a href="https://github.com/junlulocky/PopupTweets">View On <strong>GitHub</strong></a></li>
-          </ul>
-        
-      </header>
-      <section>
+![Demo](/demo/web.gif)
 
-      <h2 id="minimal-plugin-for-popup-tweet">Minimal plugin for popup tweet</h2>
-<p>This is a plugin that you can put a popup panel that holds your tweets</p>
 
-<h3 id="demo">Demo</h3>
+### Add popup tweet in your web 
 
-<p><code class="highlighter-rouge">Here is a demo</code>_ of <code class="highlighter-rouge">sample effect</code></p>
+- Put **poptweet.html** under the _includes folder of your Jekyll project.
 
-<p><img src="/demo/web.gif" alt="Demo" /></p>
+- Get your own twitter publish code at *https://publish.twitter.com/*, for example, replace this code in **poptweet.html**
 
-<h3 id="add-popup-tweet-in-your-web">Add popup tweet in your web</h3>
+```
+<a class="twitter-timeline" href="https://twitter.com/junlulocky">Tweets by junlulocky</a> 
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
 
-<ul>
-  <li>
-    <p>Put <strong>poptweet.html</strong> under the _includes folder of your Jekyll project.</p>
-  </li>
-  <li>
-    <p>Get your own twitter publish code at <em>https://publish.twitter.com/</em>, for example, replace this code in <strong>poptweet.html</strong></p>
-  </li>
-</ul>
+- add css file to your own folder
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;a class="twitter-timeline" href="https://twitter.com/junlulocky"&gt;Tweets by junlulocky&lt;/a&gt; 
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-</code></pre>
-</div>
-
-<ul>
-  <li>add css file to your own folder</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>'junpopup.css'
-</code></pre>
-</div>
-
-<ul>
-  <li>Add the following code to your own website</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>include /poptweet.html 
-</code></pre>
-</div>
-
-<div class="popup-only-box popup-box-on" id="popup-before-pop">
-  <div class="popup-only-head">
-
-    <a class="btn btn-info btn-block btn-social btn-twitter" id="addClass" onclick="popup(this.id)">
-             Popup Tweets
-    </a>
+```
+'junpopup.css'
+```
     
-  </div>
-</div>
+- Add the following code to your own website
 
-<div class="popup-box" id="popup-after-pop">
-  <div class="popup-head">
+```
+include /poptweet.html 
+```
 
- 
-
-  <a class="btn btn-info btn-block btn-social btn-twitter" id="removeClass" onclick="popdown(this.id)">
-      Popdown Tweets
-  </a>
-  
-
-  </div>
-
-  <div class="popup-messages">
-  
-  <!-- get your own twitter publish code at https://publish.twitter.com/ -->
-  <a class="twitter-timeline" href="https://twitter.com/junlulocky">Tweets by junlulocky</a> 
-  <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-  </div>
-
-
-</div>
-
-<script type="text/javascript">
-function popdown(clicked_id)
-{
-    $afterpop = $('#popup-after-pop');
-    $beforepop = $('#popup-before-pop');
-    $afterpop.removeClass('popup-box-on');
-    $beforepop.addClass('popup-box-on');
-}
-</script>
-
-<script type="text/javascript">
-function popup(clicked_id)
-{
-    $afterpop = $('#popup-after-pop');
-    $beforepop = $('#popup-before-pop');
-    $afterpop.addClass('popup-box-on');
-    $beforepop.removeClass('popup-box-on');
-}
-</script>
-
-
-
-      </section>
-      <footer>
-        
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/junlulocky">junlulocky</a></small></p>
-      </footer>
-    </div>
-    <script src="/PopupTweets/assets/js/scale.fix.js"></script>
-    <script src="/PopupTweets/assets/js/jquery.min.js"></script>
-
-
-  
-  </body>
-</html>
+{% include /poptweet.html %}
