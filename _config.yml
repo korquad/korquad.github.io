@@ -1,13 +1,13 @@
-title: Popup tweets
-description: Minimal plugin for popup tweets window
+title: KORQuAD
+description: KOR WIKI QA dataset
 show_downloads: true
-baseurl: "http://korquad.github.io" #change it according to your repository name
+baseurl: "" #change it according to your repository name
 
 
-code: https://github.com/junlulocky/PopupTweets
-zip_url: https://github.com/junlulocky/PopupTweets
-tar_url: https://github.com/junlulocky/PopupTweets
-github: https://github.com/junlulocky
+code: http://korquad.github.io
+zip_url: http://korquad.github.io
+tar_url: http://korquad.github.io
+github: http://korquad.github.io
 
 
 remote_theme : jekyller/PopupTweets
