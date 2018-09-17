@@ -1,0 +1,184 @@
+---
+layout: default
+---
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">{{ site.title }}</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">{{ content }}</h5>
+      </div>
+        
+
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">find_in_page</i></h2>
+            <h5 class="center">What is KorQuAD?</h5>
+
+            <p class="light">Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Leaderboard</h5>
+            <p class="light">SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph. How will your system compare to humans on this task? </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m2"></div>
+
+        <div class="col s12 m8">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">desktop_mac</i></h2>
+            <h5 class="center">Getting Started</h5>
+
+            <p class="light">Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.</p>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left">file_download</i>Training Set (00MB)</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Dev Set (00MB)</a>
+            </div>
+
+            <p class="light">
+              To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use 
+              <code>python evaluate-v2.0.py [path_to_dev-v2.0] [path_to_predictions]
+              </code>.
+            </p>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left">file_download</i>Evaluation Script</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample Prediction File</a>
+            </div>
+
+            <p class="light">
+              Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
+            </p>
+
+            <div class="center">
+              <a class="waves-effect waves-light btn" style="width:300px">Submission Tutorial</a>
+            </div>
+            
+
+            
+
+          </div>
+        </div>
+
+        <div class="col s12 m2"></div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Leaderboard</h5> 
+        <div class="row">
+              <div class="col s12">
+                <table class="striped centered">
+                  <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Reg. Date</th>
+                        <th>Model</th>
+                        <th>EM</th>
+                        <th>F1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2018.09.01</td>
+                      <td>
+                        Eclair
+                        <p class="light">LG CNS AI Research Team</p>
+                      </td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2018.08.11</td>
+                      <td>Jellybean</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2018.07.31</td>
+                      <td>Lollipop</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>2017.12.01</td>
+                      <td>Lollipop</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+
+
+      
+
+<!--     <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+             {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+        </ul>  
+    </section> -->
+
+  </div>
+
+</div>
