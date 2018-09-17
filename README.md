@@ -4,7 +4,6 @@
 
 The theme is a fork of the [minima][1]
 
-![minima theme preview](/screenshot.png)
 
 
 # License
