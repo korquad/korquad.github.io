@@ -1,11 +1,11 @@
 title: KorQuAD
-author: Panoramedia
-email: panoramedia@gmail.com
+author: Kyoungmin Kim
+email: kyoungmin.kim@lgcns.com
 description: > # this means to ignore newlines until "baseurl:"
   The Korean Question Answering Dataset
 
-twitter_username: macrod68
-github_username:  macrod68
+#twitter_username: macrod68
+#github_username:  macrod68
 
 sass:
     style: compressed
