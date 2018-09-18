@@ -96,7 +96,7 @@
             <h2 class="center light-blue-text"><i class="material-icons">find_in_page</i></h2>
             <h5 class="center">What is KorQuAD?</h5>
 
-            <p class="light">Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.</p>
+            <p class="light">KorQuAD는 한국어 Machine Reading Comprehension을 위해 크라우드소싱으로 만들어진 데이터셋입니다. 모든 질의에 대한 답변은 해당 Wikipedia 아티클 문단의 일부 하위 영역으로 이루어집니다. Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성되었습니다.</p>
           </div>
         </div>
 
@@ -104,7 +104,7 @@
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Leaderboard</h5>
-            <p class="light">SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph. How will your system compare to humans on this task? </p>
+            <p class="light">KorQuAD v1.0의 Test set으로 평가한 Exact Match(EM) 및 F1 score입니다. </p>
           </div>
         </div>
 
@@ -126,7 +126,7 @@
             <h2 class="center light-blue-text"><i class="material-icons">desktop_mac</i></h2>
             <h5 class="center">Getting Started</h5>
 
-            <p class="light">Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.</p>
+            <p class="light">KorQuAD는 한국어 Machine Reading Comprehension을 위해 크라우드소싱으로 만들어진 dataset입니다. 모든 질의에 대한 답변은 해당 Wikipedia 아티클 문단의 일부 하위 영역으로 이루어집니다. Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성되었습니다. 전체 데이터는 ***개의 Wikipedia article에 대해 ***건의 문단과 ***개의 질의응답 쌍으로, Training set ***개, Dev set ***개의 질의응답쌍으로 구분하였습니다.</p>
 
             <div class="center">
               <a href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Training Set (37MB)</a>
@@ -139,9 +139,7 @@
             </div>
 
             <p class="light">
-              To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use 
-              <code>python evaluate-v2.0.py [path_to_dev-v2.0] [path_to_predictions]
-              </code>.
+              모델을 평가하기 위한 공식적인 evaluation script와 입력 샘플 prediction 파일을 제공합니다. 평가를 실행하려면 <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] [path_to_predictions]</code> 를 입력하세요.
             </p>
 
             <div class="center">
@@ -155,7 +153,7 @@
             </div>
 
             <p class="light">
-              Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
+              Dev set에 대해 만족하는 모델을 만들었다면 공식 점수를 얻고 leaderboard에 올리기 위해 모델을 제줄하세요. 테스트 결과의 무결성을 위하여 Test set은 공개되지 않습니다. 대신 모델을 제출하여 Test set에서 실행할 수 있도록 해야 합니다. 다음은 모델의 공식적인 평가를 위한 과정 안내 튜토리얼입니다.
             </p>
 
             <div class="center">
@@ -282,16 +280,17 @@
   </div>
 
 </div>
+
     </main>
     
       <footer class="page-footer orange">
-    <div class="container">
+<!--     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">LG CNS AI Research Team</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
         </div>
-<!--         <div class="col l3 s12">
+        <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
@@ -308,15 +307,15 @@
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
-        </div> -->
+        </div>
       </div>
-    </div>
+    </div> -->
     <div class="footer-copyright">
         <div class="container">
             <div>
-                Made by <a target="_blank" class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                <!-- Made by <a target="_blank" class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
                 <span style="text-align: right; float: right">
-                Copyright © 2018 <a href="http://www.lgcns.com" class="orange-text text-lighten-3">LG CNS, All RIGHTS RESERVED</a>. Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
+                Copyright © 2018 <a href="mailto:jooyul.lee@lgcns.com,kmj0614@lgcns.com,kyoungmin.kim@lgcns.com" class="orange-text text-lighten-3">LG CNS AI Research Team</a>. <!-- Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a> -->
                 </span>
             </div>
         </div>
