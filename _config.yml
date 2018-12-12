@@ -9,3 +9,6 @@ description: > # this means to ignore newlines until "baseurl:"
 
 sass:
     style: compressed
+
+
+g-analytics: UA-130873429-1
