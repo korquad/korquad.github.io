@@ -7,15 +7,23 @@
   ga('create', 'UA-130873429-1', 'auto');
   ga('send', 'pageview');
 
-
-  document.getElementById("tset").addEventListener("click", function() {
-    ga('send', 'event', {
-      eventCategory: 'Outbound Link',
-      eventAction: 'click',
-      eventLabel: event.target.href,
-      transport: 'beacon'
+  function addClickEvent(id, eventCategory) {
+    document.getElementById(id).addEventListener("click", function() {
+      ga('send', 'event', {
+        eventCategory: eventCategory,
+        eventAction: 'click',
+        eventLabel: event.target.href,
+        transport: 'beacon'
+      });
+      alert(id + eventCategory);
     });
-  });
+  }
+
+  addClickEvent("testset", "TestSet");
+  addClickEvent("devset", "DevSet");
+  addClickEvent("evascript", "EvaluationScript");
+  addClickEvent("sampleprediction", "SamplePredictionFile");
+  addClickEvent("tutorial", "SubmissionTutorial");
 
 
 </script>
