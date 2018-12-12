@@ -7,5 +7,16 @@
   ga('create', 'UA-130873429-1', 'auto');
   ga('send', 'pageview');
 
+
+  document.getElementById("tset").addEventListener("click", function() {
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'click',
+      eventLabel: event.target.href,
+      transport: 'beacon'
+    });
+  });
+
+
 </script>
   
