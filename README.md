@@ -2,7 +2,7 @@
 
 *The leaderboard for The Korean Question Answering Dataset
 
-![KorQuAD leaderboard preview](/screenshot.png)
+![KorQuAD leaderboard preview](/korquad_screenshot.png)
 
 The theme is a fork of the [minima][1]
 
