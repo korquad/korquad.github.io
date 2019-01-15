@@ -25,9 +25,7 @@ layout: default
             <h2 class="center light-blue-text"><i class="material-icons">find_in_page</i></h2>
             <h5 class="center">What is KorQuAD?</h5>
 
-            <p class="light">KorQuAD는 한국어 Machine Reading Comprehension을 위해 만든 데이터셋입니다. 모든 질의에 대한 답변은 해당 Wikipedia 아티클 문단의 일부 하위 영역으로 이루어집니다. 
-
-Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성되었습니다.</p>
+            <p class="light">KorQuAD´Â ÇÑ±¹¾î Machine Reading ComprehensionÀ» À§ÇØ ¸¸µç µ¥ÀÌÅÍ¼ÂÀÔ´Ï´Ù. ¸ðµç ÁúÀÇ¿¡ ´ëÇÑ ´äº¯Àº ÇØ´ç Wikipedia ¾ÆÆ¼Å¬ ¹®´ÜÀÇ ÀÏºÎ ÇÏÀ§ ¿µ¿ªÀ¸·Î ÀÌ·ç¾îÁý´Ï´Ù. Stanford Question Answering Dataset(SQuAD) v1.0°ú µ¿ÀÏÇÑ ¹æ½ÄÀ¸·Î ±¸¼ºµÇ¾ú½À´Ï´Ù.</p>
           </div>
         </div>
 
@@ -35,7 +33,7 @@ Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Leaderboard</h5>
-            <p class="light">KorQuAD v1.0의 Test set으로 평가한 Exact Match(EM) 및 F1 score입니다. </p>
+            <p class="light">KorQuAD v1.0ÀÇ Test setÀ¸·Î Æò°¡ÇÑ Exact Match(EM) ¹× F1 scoreÀÔ´Ï´Ù. </p>
           </div>
         </div>
 
@@ -57,56 +55,38 @@ Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성
             <h2 class="center light-blue-text"><i class="material-icons">desktop_mac</i></h2>
             <h5 class="center">Getting Started</h5>
 
-            <p class="light">KorQuAD는 한국어 Machine Reading Comprehension을 위해 만든 dataset입니다. 모든 질의에 대한 답변은 해당 Wikipedia 아티클 문단의 일부 하위 영역으로 이루어집니다. 
-
-Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성되었습니다. 전체 데이터는 1,560 개의 Wikipedia article에 대해 10,645 건의 문단과 66,181 개의 질의응답 쌍으로, Training set 
-
-60,407 개, Dev set 5,774 개의 질의응답쌍으로 구분하였습니다.</p>
+            <p class="light">KorQuAD´Â ÇÑ±¹¾î Machine Reading ComprehensionÀ» À§ÇØ ¸¸µç datasetÀÔ´Ï´Ù. ¸ðµç ÁúÀÇ¿¡ ´ëÇÑ ´äº¯Àº ÇØ´ç Wikipedia ¾ÆÆ¼Å¬ ¹®´ÜÀÇ ÀÏºÎ ÇÏÀ§ ¿µ¿ªÀ¸·Î ÀÌ·ç¾îÁý´Ï´Ù. Stanford Question Answering Dataset(SQuAD) v1.0°ú µ¿ÀÏÇÑ ¹æ½ÄÀ¸·Î ±¸¼ºµÇ¾ú½À´Ï´Ù. ÀüÃ¼ µ¥ÀÌÅÍ´Â 1,560 °³ÀÇ Wikipedia article¿¡ ´ëÇØ 10,645 °ÇÀÇ ¹®´Ü°ú 66,181 °³ÀÇ ÁúÀÇÀÀ´ä ½ÖÀ¸·Î, Training set 60,407 °³, Dev set 5,774 °³ÀÇ ÁúÀÇÀÀ´ä½ÖÀ¸·Î ±¸ºÐÇÏ¿´½À´Ï´Ù.</p>
 
             <div class="center">
-              <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
-
-left">file_download</i>Training Set (37MB)</a>
+              <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Training Set (37MB)</a>
             </div>
 
             <br>
 
             <div class="center">
-              <a id="devset" href="/dataset/KorQuAD_v1.0_dev.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left" 
-
-width="100">file_download</i>Dev Set (3.9MB)</a>
+              <a id="devset" href="/dataset/KorQuAD_v1.0_dev.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left" width="100">file_download</i>Dev Set (3.9MB)</a>
             </div>
 
             <p class="light">
-              모델을 평가하기 위한 공식적인 evaluation script와 입력 샘플 prediction 파일을 제공합니다. 평가를 실행하려면 <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] 
-
-[path_to_predictions]</code> 를 입력하세요.
+              ¸ðµ¨À» Æò°¡ÇÏ±â À§ÇÑ °ø½ÄÀûÀÎ evaluation script¿Í ÀÔ·Â »ùÇÃ prediction ÆÄÀÏÀ» Á¦°øÇÕ´Ï´Ù. Æò°¡¸¦ ½ÇÇàÇÏ·Á¸é <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] [path_to_predictions]</code> ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.
             </p>
 
             <div class="center">
-              <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation 
-
-Script</a>
+              <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation Script</a>
             </div>
 
             <br>
 
             <div class="center">
-              <a id="sampleprediction" href="/dataset/dev-evaluate-in1" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample 
-
-Prediction File</a>
+              <a id="sampleprediction" href="/dataset/dev-evaluate-in1" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample Prediction File</a>
             </div>
 
             <p class="light">
-              Dev set에 대해 만족하는 모델을 만들었다면 공식 점수를 얻고 leaderboard에 올리기 위해 모델을 제줄하세요. 테스트 결과의 무결성을 위하여 Test set은 공개되지 않습니다. 대신 모델을 제출하
-
-여 Test set에서 실행할 수 있도록 해야 합니다. 다음은 모델의 공식적인 평가를 위한 과정 안내 튜토리얼입니다.
+              Dev set¿¡ ´ëÇØ ¸¸Á·ÇÏ´Â ¸ðµ¨À» ¸¸µé¾ú´Ù¸é °ø½Ä Á¡¼ö¸¦ ¾ò°í leaderboard¿¡ ¿Ã¸®±â À§ÇØ ¸ðµ¨À» Á¦ÁÙÇÏ¼¼¿ä. Å×½ºÆ® °á°úÀÇ ¹«°á¼ºÀ» À§ÇÏ¿© Test setÀº °ø°³µÇÁö ¾Ê½À´Ï´Ù. ´ë½Å ¸ðµ¨À» Á¦ÃâÇÏ¿© Test set¿¡¼­ ½ÇÇàÇÒ ¼ö ÀÖµµ·Ï ÇØ¾ß ÇÕ´Ï´Ù. ´ÙÀ½Àº ¸ðµ¨ÀÇ °ø½ÄÀûÀÎ Æò°¡¸¦ À§ÇÑ °úÁ¤ ¾È³» Æ©Åä¸®¾óÀÔ´Ï´Ù.
             </p>
 
             <div class="center">
-              <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0x7b06f2ebd0584748a3a281018e7d19b0/" class="waves-effect waves-light btn" 
-
-style="width:300px">Submission Tutorial</a>
+              <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0x7b06f2ebd0584748a3a281018e7d19b0/" class="waves-effect waves-light btn" style="width:300px">Submission Tutorial</a>
             </div>
             
 
@@ -157,12 +137,12 @@ style="width:300px">Submission Tutorial</a>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>2019.01.10</td>
+                      <td>2019.01.15</td>
                       <td>BERT multilingual (single)
-                        <p class="light">윤성훈</p>
+                        <p class="light">mypeacefulcode</p>
                       </td>
-                      <td>79.04</td>
-                      <td>89.44</td>
+                      <td>77.04</td>
+                      <td>90.13</td>
                     </tr>
                     <tr>
                       <td>3</td>
