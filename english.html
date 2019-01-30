@@ -1,0 +1,247 @@
+---
+layout: default
+---
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">{{ site.title }}</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">{{ content }}</h5>
+      </div>
+        
+
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">find_in_page</i></h2>
+            <h5 class="center">What is KorQuAD?</h5>
+
+            <p class="light">KorQuAD is a large-scale question-and-answer dataset constructed for Korean machine reading comprehension, and investigate the dataset to understand the distribution of answers and the types of reasoning required to answer the question.
+
+This dataset benchmarks the data generating process of SQuAD v1.0 to meet the standard.</p>
+            <div class="center">
+              <a id="slideshare" href="https://www.slideshare.net/SeungyoungLim/korquad-introduction" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
+left">slideshow</i>Introduction (Slide)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Leaderboard</h5>
+            <p class="light">Here are the ExactMatch (EM) and F1 scores evaluated on the test set of v1.0. </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m2"></div>
+
+        <div class="col s12 m8">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">desktop_mac</i></h2>
+            <h5 class="center">Getting Started</h5>
+
+            <p class="light">KorQuAD is a large-scale Korean dataset for machine reading comprehension task consisting of human generated questions for Wikipedia articles. We benchmark the data collecting process of SQuADv1.0 and crowdsourced 70,000+ question-answer pairs. 1,637 articles and 70,079 pairs of question answers were collected. 1,420 articles are used for the training set, 140 for the dev set, and 77 for the test set. 60,407 question-answer pairs are for the training set, 5,774 for the dev set, and 3,898 for the test set.</p>
+
+            <div class="center">
+              <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
+left">file_download</i>Training Set (37MB)</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a id="devset" href="/dataset/KorQuAD_v1.0_dev.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left" 
+
+width="100">file_download</i>Dev Set (3.9MB)</a>
+            </div>
+
+            <p class="light">
+              To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] 
+
+[path_to_predictions]</code>.
+            </p>
+
+            <div class="center">
+              <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation 
+
+Script</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a id="sampleprediction" href="/dataset/dev-evaluate-in1" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample 
+
+Prediction File</a>
+            </div>
+
+            <p class="light">
+              Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model.
+            </p>
+
+            <div class="center">
+              <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0xee93409b823f436d88741ab115403559/" class="waves-effect waves-light btn" 
+
+style="width:300px">Submission Tutorial</a>
+            </div>
+            
+
+            
+
+          </div>
+        </div>
+
+        <div class="col s12 m2"></div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Leaderboard</h5> 
+        <div class="row">
+              <div class="col s12">
+                
+
+
+                <style>
+                  table {
+                    width: 100%;
+                    border-color: #dddddd ;
+                    border-top: 1px solid #dddddd;
+                    border-collapse: collapse;
+                  }
+                  th, td {
+                    border-bottom: 1px solid #dddddd;
+                    padding: 10px;
+                  }
+                </style>
+                
+
+
+                <table class="centered">
+                  <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Reg. Date</th>
+                        <th>Model</th>
+                        <th>EM</th>
+                        <th>F1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#B0E0E6">-</td>
+                      <td bgcolor="#B0E0E6">2018.10.17</td>
+                      <td bgcolor="#B0E0E6">
+                        <b>Human Performance</b>
+                      </td>
+                      <td bgcolor="#B0E0E6">80.17</td>
+                      <td bgcolor="#B0E0E6">91.20</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2019.01.24</td>
+                      <td>BERT LM fine-tuned (single) + KHAIII
+                        <p class="light">Kakao NLP Team</p>
+                      </td>
+                      <td><b>82.14</b></td>
+                      <td><b>91.85</b></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2019.01.17</td>
+                      <td>BERT-Kor (single)
+                        <p class="light">Clova AI LPT Team</p>
+                      </td>
+                      <td>81.71</td>
+                      <td>90.95</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2019.01.23</td>
+                      <td>BERT multilingual (ensemble)
+                        <p class="light">mypeacefulcode</p>
+                      </td>
+                      <td>81.89</td>
+                      <td>90.90</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>2019.01.10</td>
+                      <td>EBB-Net + BERT (single model)
+                        <p class="light">Enliple AI</p>
+                      </td>
+                      <td>80.12</td>
+                      <td>90.71</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>2019.01.11</td>
+                      <td>
+                        BERT-Multiling-simple (single)<p class="light">kwonmha</p>
+                      </td>
+                      <td>70.75</td>
+                      <td>89.44</td>
+                    </tr>
+                      <td>6</td>
+                      <td>2018.10.17</td>
+                      <td>
+                        Baseline<p class="light">LG CNS AI Research Team</p>
+                      </td>
+                      <td>71.52</td>
+                      <td>82.99</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+
+
+      
+
+<!--     <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+             {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+        </ul>  
+    </section> dd -->
+
+  </div>
+
+</div>
