@@ -73,6 +73,7 @@ title: English
             <p class="light">KorQuAD is a large-scale question-and-answer dataset constructed for Korean machine reading comprehension, and investigate the dataset to understand the distribution of answers and the types of reasoning required to answer the question.
 
 This dataset benchmarks the data generating process of SQuAD v1.0 to meet the standard.</p>
+            <br>
             <div class="center">
               <a id="slideshare" href="https://www.slideshare.net/SeungyoungLim/korquad-introduction" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
 left">slideshow</i>Introduction (Slide)</a>
@@ -113,7 +114,7 @@ left">library_books</i>Introduction (Paper)</a>
             <h5 class="center">Getting Started</h5>
 
             <p class="light">KorQuAD is a large-scale Korean dataset for machine reading comprehension task consisting of human generated questions for Wikipedia articles. We benchmark the data collecting process of SQuADv1.0 and crowdsourced 70,000+ question-answer pairs. 1,637 articles and 70,079 pairs of question answers were collected. 1,420 articles are used for the training set, 140 for the dev set, and 77 for the test set. 60,407 question-answer pairs are for the training set, 5,774 for the dev set, and 3,898 for the test set.</p>
-
+            <br>  
             <div class="center">
               <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
 left">file_download</i>Training Set (37MB)</a>
@@ -126,13 +127,13 @@ left">file_download</i>Training Set (37MB)</a>
 
 width="100">file_download</i>Dev Set (3.9MB)</a>
             </div>
-
+            <br>
             <p class="light">
               To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] 
 
 [path_to_predictions]</code>.
             </p>
-
+            <br>
             <div class="center">
               <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation 
 
@@ -146,11 +147,11 @@ Script</a>
 
 Prediction File</a>
             </div>
-
+            <br>
             <p class="light">
               Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model.
             </p>
-
+            <br>
             <div class="center">
               <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0xee93409b823f436d88741ab115403559/" class="waves-effect waves-light btn" 
 
@@ -182,11 +183,15 @@ style="width:300px">Submission Tutorial</a>
                     width: 100%;
                     border-color: #dddddd ;
                     border-top: 1px solid #dddddd;
-                    border-collapse: collapse;
+                    border-collapse: collapse;               
                   }
                   th, td {
                     border-bottom: 1px solid #dddddd;
                     padding: 10px;
+                  }
+                  p {
+                    border: 5px;
+                    margin: 0px;
                   }
                 </style>
                 
@@ -295,6 +300,15 @@ style="width:300px">Submission Tutorial</a>
                     </tr>                                   
                     <tr>
                       <td>10</td>
+                      <td>2019.03.06</td>
+                      <td>BERT LM Fine-tuned (single model)
+                        <p class="light">DeepNLP ONE Team</p>
+                      </td>
+                      <td>71.04</td>
+                      <td>89.51</td>
+                    </tr>                                                       
+                    <tr>
+                      <td>11</td>
                       <td>2019.01.11</td>
                       <td>BERT-Multiling-simple (single)
                         <p class="light">kwonmha</p>
@@ -303,7 +317,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>89.44</td>
                     </tr>
                     <tr>
-                      <td>11</td>
+                      <td>12</td>
                       <td>2019.02.19</td>
                       <td>BERT multilingual finetune TPU (single)
                         <p class="light">jskim_kbnow</p>
@@ -312,7 +326,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>89.20</td>
                     </tr>
                     <tr>
-                      <td>12</td>
+                      <td>13</td>
                       <td>2018.12.28</td>
                       <td>BERT-Multilingual (single)
                         <p class="light">Clova AI LPT Team</p>
@@ -321,7 +335,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>87.85</td>
                     </tr>
                     <tr>
-                      <td>13</td>
+                      <td>14</td>
                       <td>2019.03.06</td>
                       <td>BERT-Multilingual (single model)
                         <p class="light">Initiative</p>
@@ -329,7 +343,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>75.94</td>
                       <td>87.65</td>
                     </tr>                      
-                      <td>14</td>
+                      <td>15</td>
                       <td>2019.03.04</td>
                       <td>DocQA (single)
                         <p class="light">CLaF</p>
@@ -338,14 +352,14 @@ style="width:300px">Submission Tutorial</a>
                       <td>85.91</td>
                     </tr>
                     <tr>
-                      <td>15</td>
+                      <td>16</td>
                       <td>2019.03.04</td>
                       <td>BiDAF (single)
                         <p class="light">CLaF</p>
                       </td>
                       <td>71.88</td>
                       <td>83.00</td>
-                    </tr>                                                                                                              
+                    </tr>                                                                                  
                     <tr>
                       <td bgcolor="#E1E1E1">-</td>
                       <td bgcolor="#E1E1E1">2018.10.17</td>

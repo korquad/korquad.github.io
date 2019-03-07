@@ -28,6 +28,7 @@ layout: default
             <p class="light">KorQuAD는 한국어 Machine Reading Comprehension을 위해 만든 데이터셋입니다. 모든 질의에 대한 답변은 해당 Wikipedia 아티클 문단의 일부 하위 영역으로 이루어집니다. 
 
 Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성되었습니다.</p>
+            <br>
             <div class="center">
               <a id="slideshare" href="https://www.slideshare.net/SeungyoungLim/korquad-introduction" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
 left">slideshow</i>KorQuAD 소개 (Slide)</a>
@@ -70,7 +71,7 @@ left">library_books</i>KorQuAD 소개 (Paper)</a>
 Stanford Question Answering Dataset(SQuAD) v1.0과 동일한 방식으로 구성되었습니다. 전체 데이터는 1,560 개의 Wikipedia article에 대해 10,645 건의 문단과 66,181 개의 질의응답 쌍으로, Training set 
 
 60,407 개, Dev set 5,774 개의 질의응답쌍으로 구분하였습니다.</p>
-
+            <br>
             <div class="center">
               <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
 left">file_download</i>Training Set (37MB)</a>
@@ -83,13 +84,13 @@ left">file_download</i>Training Set (37MB)</a>
 
 width="100">file_download</i>Dev Set (3.9MB)</a>
             </div>
-
+            <br>
             <p class="light">
               모델을 평가하기 위한 공식적인 evaluation script와 입력 샘플 prediction 파일을 제공합니다. 평가를 실행하려면 <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] 
 
 [path_to_predictions]</code> 를 입력하세요.
             </p>
-
+            <br>
             <div class="center">
               <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation 
 
@@ -103,13 +104,13 @@ Script</a>
 
 Prediction File</a>
             </div>
-
+            <br>
             <p class="light">
               Dev set에 대해 만족하는 모델을 만들었다면 공식 점수를 얻고 leaderboard에 올리기 위해 모델을 제줄하세요. 테스트 결과의 무결성을 위하여 Test set은 공개되지 않습니다. 대신 모델을 제출하
 
 여 Test set에서 실행할 수 있도록 해야 합니다. 다음은 모델의 공식적인 평가를 위한 과정 안내 튜토리얼입니다.
             </p>
-
+            <br>
             <div class="center">
               <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0x7b06f2ebd0584748a3a281018e7d19b0/" class="waves-effect waves-light btn" 
 
@@ -141,11 +142,15 @@ style="width:300px">Submission Tutorial</a>
                     width: 100%;
                     border-color: #dddddd ;
                     border-top: 1px solid #dddddd;
-                    border-collapse: collapse;
+                    border-collapse: collapse;               
                   }
                   th, td {
                     border-bottom: 1px solid #dddddd;
                     padding: 10px;
+                  }
+                  p {
+                    border: 5px;
+                    margin: 0px;
                   }
                 </style>
                 
@@ -251,9 +256,18 @@ style="width:300px">Submission Tutorial</a>
                       </td>
                       <td>71.75</td>
                       <td>90.12</td>
-                    </tr>                                   
+                    </tr>
                     <tr>
                       <td>10</td>
+                      <td>2019.03.06</td>
+                      <td>BERT LM Fine-tuned (single model)
+                        <p class="light">DeepNLP ONE Team</p>
+                      </td>
+                      <td>71.04</td>
+                      <td>89.51</td>
+                    </tr>                                                       
+                    <tr>
+                      <td>11</td>
                       <td>2019.01.11</td>
                       <td>BERT-Multiling-simple (single)
                         <p class="light">kwonmha</p>
@@ -262,7 +276,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>89.44</td>
                     </tr>
                     <tr>
-                      <td>11</td>
+                      <td>12</td>
                       <td>2019.02.19</td>
                       <td>BERT multilingual finetune TPU (single)
                         <p class="light">jskim_kbnow</p>
@@ -271,7 +285,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>89.20</td>
                     </tr>
                     <tr>
-                      <td>12</td>
+                      <td>13</td>
                       <td>2018.12.28</td>
                       <td>BERT-Multilingual (single)
                         <p class="light">Clova AI LPT Team</p>
@@ -280,7 +294,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>87.85</td>
                     </tr>
                     <tr>
-                      <td>13</td>
+                      <td>14</td>
                       <td>2019.03.06</td>
                       <td>BERT-Multilingual (single model)
                         <p class="light">Initiative</p>
@@ -288,7 +302,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>75.94</td>
                       <td>87.65</td>
                     </tr>                      
-                      <td>14</td>
+                      <td>15</td>
                       <td>2019.03.04</td>
                       <td>DocQA (single)
                         <p class="light">CLaF</p>
@@ -297,7 +311,7 @@ style="width:300px">Submission Tutorial</a>
                       <td>85.91</td>
                     </tr>
                     <tr>
-                      <td>15</td>
+                      <td>16</td>
                       <td>2019.03.04</td>
                       <td>BiDAF (single)
                         <p class="light">CLaF</p>
