@@ -43,8 +43,8 @@ title: English
     </header>
 
 
-    <main style="background-color : #eee">
-          <div style="background-color : yellow accent-4">
+    <main>
+          <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
       <h1 class="header center orange-text">KorQuAD</h1>
@@ -65,61 +65,35 @@ title: English
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m5">
-          <div class="icon-block" style="background-color : white">
-            <br>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">find_in_page</i></h2>
             <h5 class="center">What is KorQuAD?</h5>
-            <p class="light">KorQuAD is a large-scale question-and-answer dataset constructed for Korean machine reading comprehension, and investigate the dataset to understand the distribution of answers and the types of reasoning required to answer the question. This dataset benchmarks the data generating process of SQuAD v1.0 to meet the standard.</p>
+
+            <p class="light">KorQuAD is a large-scale question-and-answer dataset constructed for Korean machine reading comprehension, and investigate the dataset to understand the distribution of answers and the types of reasoning required to answer the question.
+
+This dataset benchmarks the data generating process of SQuAD v1.0 to meet the standard.</p>
             <br>
             <div class="center">
-              <a id="slideshare" href="https://www.slideshare.net/SeungyoungLim/korquad-introduction" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">slideshow</i>Introduction (Slide)</a>
+              <a id="slideshare" href="https://www.slideshare.net/SeungyoungLim/korquad-introduction" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
+left">slideshow</i>Introduction (Slide)</a>
             </div>
             <br>
             <div class="center">
-              <a id="paper" href="http://m.dbpia.co.kr/Journal/ArticleDetail/NODE07613668" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">library_books</i>Introduction (Paper)</a>
+              <a id="paper" href="http://m.dbpia.co.kr/Journal/ArticleDetail/NODE07613668" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
+left">library_books</i>Introduction (Paper)</a>
             </div>
             <br>
-            <a href="mailto:hyunjeonglee@lgcns.com" class="light">If you require this paper in English, please do not hesistate to contact us.</a>    
-            <br><br><br>
-            <h5 class="center">Getting Started</h5>
-            <p class="light">KorQuAD is a large-scale Korean dataset for machine reading comprehension task consisting of human generated questions for Wikipedia articles. We benchmark the data collecting process of SQuADv1.0 and crowdsourced 70,000+ question-answer pairs. 1,637 articles and 70,079 pairs of question answers were collected. 1,420 articles are used for the training set, 140 for the dev set, and 77 for the test set. 60,407 question-answer pairs are for the training set, 5,774 for the dev set, and 3,898 for the test set.</p>
-            <br>  
-            <div class="center">
-              <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Training Set (37MB)</a>
-            </div>
-            <br>
-            <div class="center">
-              <a id="devset" href="/dataset/KorQuAD_v1.0_dev.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left" width="100">file_download</i>Dev Set (3.9MB)</a>
-            </div>
-            <br>
-            <p class="light">
-              To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] [path_to_predictions]</code>.</p>
-            <br>
-            <div class="center">
-              <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation Script</a>
-            </div>
-            <br>
-            <div class="center">
-              <a id="sampleprediction" href="/dataset/dev-evaluate-in1" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample Prediction File</a>
-            </div>
-            <br>
-            <p class="light">
-              Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model.</p>
-            <br>
-            <div class="center">
-              <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0xee93409b823f436d88741ab115403559/" class="waves-effect waves-light btn" style="width:300px">Submission Tutorial</a>
-            </div>  
-            <br><br><br>
+            <a href="mailto:hyunjeonglee@lgcns.com" class="light">If you require this paper in English, please do not hesistate to contact us.</a>            
           </div>
         </div>
 
-        <div class="col s12 m7">
-          <div class="icon-block" style="background-color : white">
-            <br>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Leaderboard</h5>
             <p class="light">Here are the ExactMatch (EM) and F1 scores evaluated on the test set of v1.0. </p>
-            <br>
-                <style>
+                            <style>
                   table {
                     width: 100%;
                     border-color: #dddddd ;
@@ -164,7 +138,7 @@ title: English
                       </td>
                       <td><b>86.84<b></td>
                       <td><b>94.75</b></td>
-                    </tr>
+                    </tr>                      
                     <tr>
                       <td>1</td>
                       <td>2019.06.26</td>
@@ -209,7 +183,7 @@ title: English
                       </td>
                       <td>86.12</td>
                       <td>94.02</td>
-                    </tr>
+                    </tr>                    
                     <tr>
                       <td>6</td>
                       <td>2019.05.07</td>
@@ -245,7 +219,7 @@ title: English
                       </td>
                       <td>85.15</td>
                       <td>93.20</td>
-                    </tr>
+                    </tr>                   
                     <tr>
                       <td>10</td>
                       <td>2019.05.24</td>
@@ -604,15 +578,99 @@ title: English
                       </td>
                       <td bgcolor="#E1E1E1">71.52</td>
                       <td bgcolor="#E1E1E1">82.99</td>
-                    </tr>
+                    </tr>                    
                   </tbody>
                 </table>
-                <br><br><br>
           </div>
         </div>
+
       </div>
+
     </div>
 
+    <div class="divider"></div>
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m2"></div>
+
+        <div class="col s12 m8">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">desktop_mac</i></h2>
+            <h5 class="center">Getting Started</h5>
+
+            <p class="light">KorQuAD is a large-scale Korean dataset for machine reading comprehension task consisting of human generated questions for Wikipedia articles. We benchmark the data collecting process of SQuADv1.0 and crowdsourced 70,000+ question-answer pairs. 1,637 articles and 70,079 pairs of question answers were collected. 1,420 articles are used for the training set, 140 for the dev set, and 77 for the test set. 60,407 question-answer pairs are for the training set, 5,774 for the dev set, and 3,898 for the test set.</p>
+            <br>  
+            <div class="center">
+              <a id="trainingset" href="/dataset/KorQuAD_v1.0_train.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons 
+left">file_download</i>Training Set (37MB)</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a id="devset" href="/dataset/KorQuAD_v1.0_dev.json" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left" 
+
+width="100">file_download</i>Dev Set (3.9MB)</a>
+            </div>
+            <br>
+            <p class="light">
+              To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use <code>python evaluate-korquad_v1.0.py [path_to_dev-v1.0] 
+
+[path_to_predictions]</code>.
+            </p>
+            <br>
+            <div class="center">
+              <a id="evascript" href="/dataset/evaluate-v1.0.py" class="waves-effect waves-light btn" style="width:300px" download=""><i class="material-icons left">file_download</i>Evaluation 
+
+Script</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a id="sampleprediction" href="/dataset/dev-evaluate-in1" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample 
+
+Prediction File</a>
+            </div>
+            <br>
+            <p class="light">
+              Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model.
+            </p>
+            <br>
+            <div class="center">
+              <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0xee93409b823f436d88741ab115403559/" class="waves-effect waves-light btn" 
+
+style="width:300px">Submission Tutorial</a>
+            </div>
+            
+
+            
+
+          </div>
+        </div>
+
+        <div class="col s12 m2"></div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Leaderboard</h5> 
+        <div class="row">
+              <div class="col s12">
+                
+
+              </div>
+        </div>
+    </div>
+
+
+      
 
 <!--     <div style="background: #ddd">
     <div class="container last-post">
@@ -632,8 +690,11 @@ title: English
         {% endfor %}
         </ul>  
     </section> dd -->
+
   </div>
+
 </div>
+
 </div>
     </main>
     
@@ -673,5 +734,10 @@ title: English
 
 
 </script>
+  
+
+    
+
   </body>
+
 </html>
