@@ -1,4 +1,4 @@
-<nav class="light-blue lighten-1" role="navigation">
+<nav class="amber accent-4" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">KorQuAD</a>
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
@@ -29,6 +29,9 @@
 
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
+
+</nav>
+
     <header class="site-category">
       <ul>
         
@@ -44,5 +47,3 @@
         
     </ul>
     </header>
-</nav>
-
