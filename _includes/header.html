@@ -2,7 +2,7 @@
     <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">KorQuAD</a>
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-<!--
+
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ "/" | relative_url }}">V1.0 (한국어)</a></li>
             {% if page_paths %}
@@ -26,35 +26,13 @@
                 {% endfor %}
             {% endif %} 
           </ul>
--->
+
 
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 
 </nav>
 
-<header>
-
-	    <div class="site-category">
-			<ul class='cat1'>
-				<li><a href="#">KorQuAD 1.0</a>
-					<ul>
-						<li><a href="#">한국어</a></li>
-						<li><a href="#">Eng</a></li>           
-					</ul>
-				</li>
-        
-				<li><a href="#">KorQuAD 2.0</a>
-					<ul>
-						<li><a href="#">한국어</a></li>
-						<li><a href="#">Eng</a></li>           
-					</ul>
-				</li>        
-
-				
-			</ul>
-		</div>
-</header>
 
 <!--
     <header class="site-category" style="background-color:#ff6d70">
