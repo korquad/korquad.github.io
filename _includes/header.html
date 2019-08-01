@@ -4,7 +4,7 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
           <ul class="right hide-on-med-and-down">
-            <li><a href="{{ "/" | relative_url }}">한국어 </a></li>
+            <li><a href="{{ "/" | relative_url }}">V1.0 (한국어)</a></li>
             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
@@ -48,27 +48,4 @@
         
     </ul>
     </header>
--->
-
-
-<!--
-<div class="site-category">
-    <ul class='cat1'>
-      <li><a href="/">Home</a></li>
-      <li><a href="/">KorQuAD 1.0</a>
-        <ul>
-            <li><a href="/KorQuAD1.0/Korean">한국어</a></li>
-            <li><a href="/KorQuAD1.0/English">English</a></li>
-        </ul>
-      </li>
-
-      <li><a href="/">KorQuAD 2.0</a>
-        <ul>
-            <li><a href="/KorQuAD2.0/Korean">한국어</a></li>
-            <li><a href="/KorQuAD2.0/English">English</a></li>
-        </ul>
-      </li>
-
-    </ul>
-  </div>
 -->
