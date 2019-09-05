@@ -4,7 +4,7 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
           <ul class="right hide-on-med-and-down">
-            <li><a href="{{ "/" | relative_url }}">1.0 (한국어)</a></li>
+              
             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
