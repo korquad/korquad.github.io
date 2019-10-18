@@ -98,24 +98,20 @@ def evaluate(dataset, predictions):
 
 
 if __name__ == '__main__':
-    expected_version = 'KorQuAD_2.0'
+    expected_version = 'KorQuAD_v2.0'
     parser = argparse.ArgumentParser(
         description='Evaluation for KorQuAD ' + expected_version)
-    parser.add_argument('dataset_folder', help='Dataset file')
+    parser.add_argument('dataset_file', help='Dataset file')
     parser.add_argument('prediction_file', help='Prediction File')
     args = parser.parse_args()
-    dataset_files = os.listdir(args.dataset_file)
-    dataset_files = [a for a in file_names if a[-4:]=="json"]
+    file_names = os.listdir(args.dataset_file)
+    file_names = [a for a in file_names if a[-4:]=="json"]
     dataset = []
-    for dataset_file in dataset_files:
-        with open(args.dataset_file) as dataset_file:
+    for file_name in file_names:
+        data_file = os.path.join(args.dataset_file, file_name)
+        with open(data_file) as dataset_file:
             dataset_json = json.load(dataset_file)
-            read_version = "_".join(dataset_json['version'].split("_")[:-1])
-            if (expected_version not in read_version):
-                print('Evaluation expects ' + expected_version +
-                      ', but got dataset with ' + read_version,
-                      file=sys.stderr)
-            dataset.expend(dataset_json['data'])
+            dataset.extend(dataset_json['data'])
     with open(args.prediction_file) as prediction_file:
         predictions = json.load(prediction_file)
     print(json.dumps(evaluate(dataset, predictions)))
