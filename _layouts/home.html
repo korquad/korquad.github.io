@@ -99,23 +99,6 @@ layout: default
             <br>
             <p class="light">KorQuAD 2.0의 Test set으로 평가한 Exact Match(EM) 및 F1 score 입니다.  </p>
             <br>
-                <style>
-                  table {
-                    width: 100%;
-                    border-color: #dddddd ;
-                    border-top: 1px solid #dddddd;
-                    border-collapse: collapse;
-                  }
-                  th, td {
-                    border-bottom: 1px solid #dddddd;
-                    padding: 10px;
-                  }
-                  p {
-                    border: 5px;
-                    margin: 0px;
-                  }
-                </style>
-
                 <table class="responsive-table centered">
                   {% assign table_datas = site.data.info | sort: "EM" | reverse %}
                   {% for row in table_datas %}
@@ -421,23 +404,6 @@ layout: default
                 <br><br><br>
             <p class="light">KorQuAD 2.0의 Test set으로 평가한 <b>Time (ms)</b>, Exact Match(EM) 및 F1 score 입니다.  </p>
             <br>
-                <style>
-                  table {
-                    width: 100%;
-                    border-color: #dddddd ;
-                    border-top: 1px solid #dddddd;
-                    border-collapse: collapse;
-                  }
-                  th, td {
-                    border-bottom: 1px solid #dddddd;
-                    padding: 10px;
-                  }
-                  p {
-                    border: 5px;
-                    margin: 0px;
-                  }
-                </style>
-
                 <table class="centered">
                   <thead>
                     <tr>
