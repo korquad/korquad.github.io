@@ -115,7 +115,8 @@ layout: default
                     margin: 0px;
                   }
                 </style>
-
+                {% assign row = site.data.info[0] %}
+                {{ row | inspect }}
                 <table class="centered">
                   <thead>
                     <tr>
