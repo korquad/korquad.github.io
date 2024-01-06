@@ -117,10 +117,11 @@ layout: default
                 </style>
 
                 <table class="responsive-table centered">
-                  {% assign table_datas = site.data.info | sort: "date" %}
+                  {% assign table_datas = site.data.info | sort: "EM" %}
                   {% for row in table_datas %}
                     {% if forloop.first %}
                     <tr>
+                      <th>Number</th>
                       {% for pair in row %}
                         <th>{{ pair[0] }}</th>
                       {% endfor %}
@@ -128,7 +129,7 @@ layout: default
                     {% endif %}
 
                     {% tablerow pair in row %}
-                      {{ pair[1] }}
+                       <td>{{ tablerow.index }}</td> {{ pair[1] }}
                     {% endtablerow %}
                   {% endfor %}
                 </table>
