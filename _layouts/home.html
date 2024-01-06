@@ -115,9 +115,10 @@ layout: default
                     margin: 0px;
                   }
                 </style>
-                {% assign table_datas = site.data.info | sort: "date" %}
+
                 <table class="responsive-table centered">
-                  {% for row in site.data.info %}
+                  {% assign table_datas = site.data.info | sort: "date" %}
+                  {% for row in table_datas %}
                     {% if forloop.first %}
                     <tr>
                       {% for pair in row %}
