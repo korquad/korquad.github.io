@@ -16,7 +16,7 @@ date,model,EM,F1
 2020.06.15,CNS-BERT (single model) Seungyoung Lim,70.67,83.57
 2020.04.20,LaRva (single model) NAVER Clova AI LaRva,66.95,83.54
 2022.11.08,LDCC-LM (single model) Lotte Data Communication AI Technical Team,69.07,83.06
-2021.05.03,SkERT-Petit 1.1 (single model) Skelter Labs,68.5,82.93
+2021.05.03,SkERT-Petit 1.1 (single model) Skelter Labs,68.50,82.93
 2020.02.21,CNS-BERT (single model) Seungyoung Lim,68.39,82.62
 2020.03.10,CNS-BERT_light (single model) Seungyoung Lim,66.96,80.48
 2020.11.18,table_plus (single model) Anonymous,59.20,77.52
