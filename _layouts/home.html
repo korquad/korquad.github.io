@@ -120,30 +120,34 @@ layout: default
                   {% assign table_datas = site.data.info | sort: "EM" | reverse %}
                   {% for row in table_datas %}
                     {% if forloop.first %}
-                    <tr class="grey lighten-3 center-align">
-                      <th>Rank</th>
-                      {% for pair in row %}
-                        <th>{{ pair[0] }}</th>
-                      {% endfor %}
-                    </tr>
-                    {% endif %}
+                    <thead>
+                      <tr class="grey lighten-3">
+                        <th>Rank</th>
+                        {% for pair in row %}
+                          <th>{{ pair[0] }}</th>
+                        {% endfor %}
+                      </tr>
+                    </thead>
 
-                    {% case row.model %}
-                      {% when "Baseline", "Human Performance" %}
-                         <tr class="grey lighten-3">
-                           <td>{{ forloop.index }}</td>
-                           {% for pair in row %}
-                             <td>{{ pair[1] }}</td>
-                           {% endfor %}
-                         </tr>
-                      {% else %}
-                         <tr>
-                           <td>{{ forloop.index }}</td>
-                           {% for pair in row %}
-                             <td>{{ pair[1] }}</td>
-                           {% endfor %}
-                         </tr>
-                    {% endcase %}
+                    {% endif %}
+                    <tbody>
+                      {% case row.model %}
+                        {% when "Baseline", "Human Performance" %}
+                           <tr class="grey lighten-3">
+                             <td>{{ forloop.index }}</td>
+                             {% for pair in row %}
+                               <td>{{ pair[1] }}</td>
+                             {% endfor %}
+                           </tr>
+                        {% else %}
+                           <tr>
+                             <td>{{ forloop.index }}</td>
+                             {% for pair in row %}
+                               <td>{{ pair[1] }}</td>
+                             {% endfor %}
+                           </tr>
+                      {% endcase %}
+                    </tbody>
                   {% endfor %}
                 </table>
 
