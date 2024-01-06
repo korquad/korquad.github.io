@@ -117,7 +117,7 @@ layout: default
                 </style>
 
                 <table class="responsive-table centered">
-                  {% assign table_datas = site.data.info | sort: "EM" %}
+                  {% assign table_datas = site.data.info | sort: "EM" | reverse %}
                   {% for row in table_datas %}
                     {% if forloop.first %}
                     <tr class="grey lighten-3">
