@@ -1,13 +1,13 @@
 rank,date,model,EM,F1
 -,2019.09.05,Human Performance,68.82,83.86
 1,2023.10.28,EXAONE-LM-v1.0 LG AI Research,79.26,90.93
-2,2022.03.08,LittleBird-large (single model) KakaoEnterprise - Minchul Lee, DongHyun Choi, Seung Woo Cho, Ae Lim Ahn,78.70,90.22
+2,2022.03.08,"LittleBird-large (single model) KakaoEnterprise - Minchul Lee, DongHyun Choi, Seung Woo Cho, Ae Lim Ahn",78.70,90.22
 3,2022.09.02,LAYN (single model) Naver Search Language and Vision (Soonhwan Kwon & Sunghyun Park),78.06,89.99
 4,2020.09.21,SDS-NET v1.3 (single model) Samsung SDS AI Research,77.86,89.82
 5,2020.08.28,Ko-LongBERT (single model) LAIR,77.88,89.62
 6,2020.08.28,SkERT-Large 1.1 (single model) Skelter Labs,77.44,88.81
 7,2020.07.01,SDS-NET v1.2 (single model) Samsung SDS AI Research (Bae & Kwon),76.73,88.78
-8,2022.02.09,LittleBird-base (single model) KakaoEnterprise - Minchul Lee, DongHyun Choi, Seung Woo Cho, Ae Lim Ahn,76.66,88.57
+8,2022.02.09,"LittleBird-base (single model) KakaoEnterprise - Minchul Lee, DongHyun Choi, Seung Woo Cho, Ae Lim Ahn",76.66,88.57
 9,2020.06.24,SkERT-Large (Single model) Skelter Labs,76.64,88.09
 10,2020.05.03,SDS-NET v1.1 Samsung SDS AI Research (Bae & Kwon),73.87,86.81
 11,2020.04.29,SDS-NET (single model) Sanghwan Bae & Soonhwan Kwon,73.51,86.56
@@ -25,5 +25,5 @@ rank,date,model,EM,F1
 23,2020.11.02,bert-base_model (single model) Anonymous,57.33,75.87
 24,2019.12.23,HanBert-54k-N (single model) TwoBlock Ai,55.28,71.19
 25,2019.12.24,HanBert-90k-N (single model) TwoBlock Ai,54.28,70.44
-26,2019.11.28,KNU-baseline (single model) Kangwon National University, Intelligent Software Lab.,26.53,66.69
+26,2019.11.28,"KNU-baseline (single model) Kangwon National University, Intelligent Software Lab.",26.53,66.69
 -,2019.09.05,Baseline,30.24,45.96
