@@ -128,9 +128,12 @@ layout: default
                     </tr>
                     {% endif %}
 
-                    {% tablerow pair in row %}
-                       <td>{{ tablerow.index }}</td> {{ pair[1] }}
-                    {% endtablerow %}
+                    <tr>
+                      <td>{{ forloop.index }}</td>
+                      {% for pair in row %}
+                        <td>{{ pair[1] }}</td>
+                      {% endfor %}
+                    </tr>
                   {% endfor %}
                 </table>
 
