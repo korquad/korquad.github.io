@@ -121,9 +121,9 @@ layout: default
                   {% for row in table_datas %}
                     {% if forloop.first %}
                     <tr>
-                      <th>Number</th>
+                      <th class="grey lighten-3">Number</th>
                       {% for pair in row %}
-                        <th>{{ pair[0] }}</th>
+                        <th class="grey lighten-3">{{ pair[0] }}</th>
                       {% endfor %}
                     </tr>
                     {% endif %}
