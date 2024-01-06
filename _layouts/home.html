@@ -13,7 +13,7 @@ layout: default
     <title>KorQuAD</title>
     <meta name="description" content="The Korean Question Answering Dataset" />
 
-  
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
@@ -22,26 +22,7 @@ layout: default
     <link rel="icon" type="image/png" href="/favicon.png">
 
 </head>
-    
-    
-<!--
-    <header class="site-category" style="background-color:#fc766aff">
- 
-      <ul>
-        
-        {% assign pages_list = site.pages %}
-        {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if node.layout == "category" %}
-              <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-              href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        
-    </ul>
-    </header>
--->
+
     <main style="background-color:#eee">
     <div class="cover" style="background-color:#81E4BD">
     <div class="container">
@@ -77,9 +58,9 @@ layout: default
             <hr style="border:solid 2px #e0e0e0"></hr>
             <br>
             <p class="light">KorQuAD 2.1의 전체 데이터는 47,957 개의 Wikipedia article에 대해 102,960 개의 질의응답 쌍으로, Training set 83,486 개, Dev set 10,165 개의 질의응답쌍으로 구분하였습니다. KorQuAD 2.0 데이터 중 HTML 태그의 속성이 완벽하게 제거되지 않은 오류를 수정하여 재배포한 데이터셋으로, KorQuAD 2.0의 태그 속성을 제외한 원본과 정답 텍스트가 바뀌는 경우는 없습니다.</p>
-            <p class="light">KorQuAD 2.0의 데이터셋은 <a href="https://creativecommons.org/licenses/by-nd/2.0/kr/" font color=#fc766aff>CC BY-ND 2.0 KR</a> 라이센스를 따릅니다.</p> 
-            <p class="light">Codalab을 통한 모델 제출시 테스트 스코어 계산 및 리더보드를 통한 스코어 공개에 동의한 것으로 간주합니다. 참고로 제출한 모델 및 소스 코드 등에 대해서는 참가자가 직접 라이센스를 부여하고 이를 명시할 경우 그에 따릅니다.</p>           
-            <br>  
+            <p class="light">KorQuAD 2.0의 데이터셋은 <a href="https://creativecommons.org/licenses/by-nd/2.0/kr/" font color=#fc766aff>CC BY-ND 2.0 KR</a> 라이센스를 따릅니다.</p>
+            <p class="light">Codalab을 통한 모델 제출시 테스트 스코어 계산 및 리더보드를 통한 스코어 공개에 동의한 것으로 간주합니다. 참고로 제출한 모델 및 소스 코드 등에 대해서는 참가자가 직접 라이센스를 부여하고 이를 명시할 경우 그에 따릅니다.</p>
+            <br>
             <div class="center">
               <a id="trainingset" href="https://github.com/korquad/korquad.github.io/tree/master/dataset/KorQuAD_2.1/train" class="waves-effect waves-light btn" style="width:300px; background-color:#81e4bd" download=""><i class="material-icons left">file_download</i>Training Set (6.4GB)</a>
             </div>
@@ -98,14 +79,14 @@ layout: default
             <br>
             <div class="center">
               <a id="sampleprediction2.0" href="/dataset/KorQuAD_2.0/sample_prediction_2.0.json" class="waves-effect waves-light btn" style="width:300px; background-color:#81e4bd" download=""><i class="material-icons left" width="100">file_download</i>Sample Prediction File</a>
-            </div>        
+            </div>
             <br>
             <p class="light">
               Dev set에 대해 만족하는 모델을 만들었다면 공식 점수를 얻고 leaderboard에 올리기 위해 모델을 제줄하세요. 무분별한 제출을 방지하는 차원에서 일주일에 하나의 모델을 제출하는 것으로 제한합니다. 테스트 결과의 무결성을 위하여 Test set은 공개되지 않습니다. 대신 모델을 제출하여 Test set에서 실행할 수 있도록 해야 합니다. 다음은 모델의 공식적인 평가를 위한 과정 안내 튜토리얼입니다.</p>
             <br>
             <div class="center">
               <a id="tutorial" target="_blank" href="https://worksheets.codalab.org/worksheets/0xf9b9efaff9c641a7a48290fe4c94d593" class="waves-effect waves-light btn" style="width:300px; background-color:#81e4bd">Submission Tutorial</a>
-            </div>  
+            </div>
             <br><br><br>
           </div>
         </div>
@@ -114,8 +95,8 @@ layout: default
           <div class="icon-block" style="background-color : white">
             <br>
             <h5 class="left-down">Leaderboard</h5>
-            <hr style="border:solid 2px #e0e0e0"></hr>     
-            <br>                   
+            <hr style="border:solid 2px #e0e0e0"></hr>
+            <br>
             <p class="light">KorQuAD 2.0의 Test set으로 평가한 Exact Match(EM) 및 F1 score 입니다.  </p>
             <br>
                 <style>
@@ -123,7 +104,7 @@ layout: default
                     width: 100%;
                     border-color: #dddddd ;
                     border-top: 1px solid #dddddd;
-                    border-collapse: collapse;               
+                    border-collapse: collapse;
                   }
                   th, td {
                     border-bottom: 1px solid #dddddd;
@@ -134,7 +115,7 @@ layout: default
                     margin: 0px;
                   }
                 </style>
-                
+
                 <table class="centered">
                   <thead>
                     <tr>
@@ -163,7 +144,7 @@ layout: default
                       </td>
                       <td><b>79.26</b></td>
                       <td><b>90.93</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>2</td>
                       <td>2022.03.08</td>
@@ -173,7 +154,7 @@ layout: default
                       </td>
                         <td>78.70<</td>
                         <td>90.22</td>
-                    </tr>   
+                    </tr>
                     <tr>
                       <td>3</td>
                       <td>2022.09.02</td>
@@ -182,7 +163,7 @@ layout: default
                       </td>
                       <td>78.06</td>
                       <td>89.99</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>4</td>
                       <td>2020.09.21</td>
@@ -191,7 +172,7 @@ layout: default
                       </td>
                       <td>77.86</td>
                       <td>89.82</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>5</td>
                       <td>2020.08.28</td>
@@ -200,7 +181,7 @@ layout: default
                       </td>
                       <td>77.88</td>
                       <td>89.62</td>
-                    </tr>    
+                    </tr>
                     <tr>
                       <td>6</td>
                       <td>2020.08.28</td>
@@ -209,7 +190,7 @@ layout: default
                       </td>
                       <td>77.44</td>
                       <td>88.81</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>7</td>
                       <td>2020.07.01</td>
@@ -228,7 +209,7 @@ layout: default
                       </td>
                       <td>76.66</td>
                       <td>88.57</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>9</td>
                       <td>2020.06.24</td>
@@ -237,7 +218,7 @@ layout: default
                       </td>
                       <td>76.64</td>
                       <td>88.09</td>
-                    </tr>                      
+                    </tr>
                     <tr>
                       <td>10</td>
                       <td>2020.05.03</td>
@@ -246,7 +227,7 @@ layout: default
                       </td>
                       <td>73.87</td>
                       <td>86.81</td>
-                    </tr>     
+                    </tr>
                     <tr>
                       <td>11</td>
                       <td>2020.04.29</td>
@@ -255,7 +236,7 @@ layout: default
                       </td>
                       <td>73.51</td>
                       <td>86.56</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>12</td>
                       <td>2020.08.31</td>
@@ -264,7 +245,7 @@ layout: default
                       </td>
                       <td>71.24</td>
                       <td>86.37</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>13</td>
                       <td>2020.06.22</td>
@@ -273,7 +254,7 @@ layout: default
                       </td>
                       <td>73.29</td>
                       <td>86.03</td>
-                    </tr>                        
+                    </tr>
                     <tr>
                       <td>14</td>
                       <td>2020.06.15</td>
@@ -282,7 +263,7 @@ layout: default
                       </td>
                       <td>70.67</td>
                       <td>83.57</td>
-                    </tr>                           
+                    </tr>
                     <tr>
                       <td>15</td>
                       <td>2020.04.20</td>
@@ -300,7 +281,7 @@ layout: default
                       </td>
                       <td>69.07</td>
                       <td>83.06</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>17</td>
                       <td>2021.05.03</td>
@@ -309,7 +290,7 @@ layout: default
                       </td>
                       <td>68.5</td>
                       <td>82.93</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>18</td>
                       <td>2020.02.21</td>
@@ -318,7 +299,7 @@ layout: default
                       </td>
                       <td>68.39</td>
                       <td>82.62</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>19</td>
                       <td>2020.03.10</td>
@@ -327,7 +308,7 @@ layout: default
                       </td>
                       <td>66.96</td>
                       <td>80.48</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>20</td>
                       <td>2020.11.18</td>
@@ -345,7 +326,7 @@ layout: default
                       </td>
                       <td>62.36</td>
                       <td>77.49</td>
-                    </tr>                      
+                    </tr>
                     <tr>
                       <td>22</td>
                       <td>2020.01.29</td>
@@ -363,7 +344,7 @@ layout: default
                       </td>
                       <td>57.33</td>
                       <td>75.87</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>24</td>
                       <td>2019.12.23</td>
@@ -390,7 +371,7 @@ layout: default
                       </td>
                       <td>26.53</td>
                       <td>66.69</td>
-                    </tr>                      
+                    </tr>
                     <tr>
                       <td bgcolor="#eee">-</td>
                       <td bgcolor="#eee">2019.09.05</td>
@@ -410,7 +391,7 @@ layout: default
                     width: 100%;
                     border-color: #dddddd ;
                     border-top: 1px solid #dddddd;
-                    border-collapse: collapse;               
+                    border-collapse: collapse;
                   }
                   th, td {
                     border-bottom: 1px solid #dddddd;
@@ -421,14 +402,14 @@ layout: default
                     margin: 0px;
                   }
                 </style>
-                
+
                 <table class="centered">
                   <thead>
                     <tr>
                         <th>Rank</th>
                         <th>Reg. Date</th>
                         <th>Model</th>
-                        <th>1-example Latency</th>                            
+                        <th>1-example Latency</th>
                         <th>EM</th>
                         <th>F1</th>
                     </tr>
@@ -440,7 +421,7 @@ layout: default
                       <td>SkERT-Petit 1.0 (single model)
                         <p class="light">Skelter Labs</p>
                       </td>
-                      <td><b>882 ms</b></td>                         
+                      <td><b>882 ms</b></td>
                       <td>62.36</td>
                       <td>77.49</td>
                     </tr>
@@ -450,139 +431,139 @@ layout: default
                       <td>SkERT-Petit 1.1 (single model)
                         <p class="light">Skelter Labs</p>
                       </td>
-                      <td>1134 ms</td>                       
+                      <td>1134 ms</td>
                       <td>68.5</td>
                       <td>82.93</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>3</td>
                       <td>2020.01.29</td>
                       <td>onepick-open-simple (single model)
                         <p class="light">SeoHyeong Jeong</p>
                       </td>
-                      <td>1629 ms</td>                          
+                      <td>1629 ms</td>
                       <td>58.21</td>
                       <td>77.33</td>
-                    </tr>                        
+                    </tr>
                     <tr>
                       <td>4</td>
-                      <td>2019.12.24</td>                     
+                      <td>2019.12.24</td>
                       <td>HanBert-90k-N (single model)
                         <p class="light">TwoBlock Ai</p>
                       </td>
-                      <td>1642 ms</td>                          
+                      <td>1642 ms</td>
                       <td>54.28</td>
                       <td>70.44</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>5</td>
                       <td>2019.12.23</td>
                       <td>HanBert-54k-N (single model)
                         <p class="light">TwoBlock Ai</p>
                       </td>
-                      <td>1675 ms</td>                          
+                      <td>1675 ms</td>
                       <td>55.28</td>
                       <td>71.19</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>6</td>
                       <td>2022.02.09</td>
                       <td>LittleBird-base (single model)
                         <p class="light">Anonymous</p>
                       </td>
-                      <td>2286 ms</td>                       
+                      <td>2286 ms</td>
                       <td>76.66</td>
                       <td>88.57</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>7</td>
                       <td>2020.03.10</td>
                       <td>CNS-BERT_light (single model)
                         <p class="light">Seungyoung Lim</p>
                       </td>
-                      <td>2396 ms</td>                           
+                      <td>2396 ms</td>
                       <td>66.96</td>
                       <td>80.48</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>8</td>
                       <td>2020.08.31</td>
                       <td>anonymous-baseline (single model)
                         <p class="light">Anonymous</p>
                       </td>
-                      <td>3362 ms</td>                          
+                      <td>3362 ms</td>
                       <td>71.24</td>
                       <td>86.37</td>
-                    </tr>                        
+                    </tr>
                     <tr>
                       <td>9</td>
-                      <td>2019.11.28</td>                     
+                      <td>2019.11.28</td>
                       <td>KNU-baseline (single model)
                         <p class="light">Kangwon National University, Intelligent Software Lab.</p>
                       </td>
-                      <td>3684 ms</td>                          
+                      <td>3684 ms</td>
                       <td>26.53</td>
                       <td>66.69</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>10</td>
                       <td>2022.11.08</td>
                       <td>LDCC-LM (single model)
                         <p class="light">Lotte Data Communication AI Technical Team</p>
                       </td>
-                      <td>3697 ms</td>                       
+                      <td>3697 ms</td>
                       <td>69.07</td>
                       <td>83.06</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>11</td>
                       <td>2020.02.21</td>
                       <td>CNS-BERT (single model)
                         <p class="light">Seungyoung Lim</p>
                       </td>
-                      <td>3903 ms</td>                          
+                      <td>3903 ms</td>
                       <td>68.39</td>
                       <td>82.62</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>12</td>
                       <td>2020.06.15</td>
                       <td>CNS-BERT (single model)
                         <p class="light">Seungyoung Lim</p>
                       </td>
-                      <td>4257 ms</td>                           
+                      <td>4257 ms</td>
                       <td>70.67</td>
                       <td>83.57</td>
-                    </tr>   
+                    </tr>
                     <tr>
                       <td>13</td>
                       <td>2020.11.02</td>
                       <td>bert-base_model (single model)
                         <p class="light">Anonymous</p>
                       </td>
-                      <td>4856 ms</td>                       
+                      <td>4856 ms</td>
                       <td>57.33</td>
                       <td>75.87</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>14</td>
                       <td>2020.11.18</td>
                       <td>table_plus (single model)
                         <p class="light">Anonymous</p>
                       </td>
-                      <td>5990 ms</td>                        
+                      <td>5990 ms</td>
                       <td>59.20</td>
                       <td>77.52</td>
-                    </tr>                      
+                    </tr>
                     <tr>
                       <td>15</td>
                       <td>2020.04.20</td>
                       <td>LaRva (single model)
                         <p class="light">NAVER Clova AI LaRva</p>
                       </td>
-                      <td>6015 ms</td>                          
+                      <td>6015 ms</td>
                       <td>66.95</td>
-                      <td>83.54</td>               
+                      <td>83.54</td>
                     </tr>
                     <tr>
                       <td>16</td>
@@ -590,97 +571,97 @@ layout: default
                       <td>LittleBird-large (single model)
                         <p class="light">Anonymous</p>
                       </td>
-                      <td>6157 ms</td>                       
+                      <td>6157 ms</td>
                         <td><b>78.70</b></td>
                         <td><b>90.22</b></td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td>17</td>
                       <td>2020.07.01</td>
                       <td>SDS-NET v1.2 (single model)
                         <p class="light">Samsung SDS AI Research (Bae & Kwon)</p>
                       </td>
-                      <td>7851 ms</td>                         
+                      <td>7851 ms</td>
                       <td>76.73</td>
                       <td>88.78</td>
-                    </tr>    
+                    </tr>
                     <tr>
                       <td>18</td>
                       <td>2020.05.03</td>
                       <td>SDS-NET v1.1
                         <p class="light">Samsung SDS AI Research (Bae & Kwon)</p>
                       </td>
-                      <td>8869 ms</td>                        
+                      <td>8869 ms</td>
                       <td>73.87</td>
                       <td>86.81</td>
-                    </tr>                      
+                    </tr>
                     <tr>
                       <td>19</td>
                       <td>2020.04.29</td>
                       <td>SDS-NET (single model)
                         <p class="light">Sanghwan Bae & Soonhwan Kwon</p>
                       </td>
-                      <td>8875 ms</td>                            
+                      <td>8875 ms</td>
                       <td>73.51</td>
                       <td>86.56</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>20</td>
                       <td>2020.08.28</td>
                       <td>Ko-LongBERT (single model)
                         <p class="light">LAIR</p>
                       </td>
-                      <td>10047 ms</td>                         
+                      <td>10047 ms</td>
                       <td>77.88</td>
                       <td>89.62</td>
-                    </tr>                        
+                    </tr>
                     <tr>
                       <td>21</td>
                       <td>2020.08.28</td>
                       <td>SkERT-Large 1.1 (single model)
                         <p class="light">Skelter Labs</p>
                       </td>
-                      <td>10047 ms</td>                            
+                      <td>10047 ms</td>
                       <td>77.44</td>
                       <td>88.81</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>22</td>
                       <td>2020.09.21</td>
                       <td>SDS-NET v1.3 (single model)
                         <p class="light">Samsung SDS AI Research</p>
                       </td>
-                      <td>10434 ms</td>                        
+                      <td>10434 ms</td>
                       <td>77.86</td>
                       <td>89.82</td>
-                    </tr>                        
+                    </tr>
                     <tr>
                       <td>23</td>
                       <td>2020.06.24</td>
                       <td>SkERT-Large (Single model)
                         <p class="light">Skelter Labs</p>
                       </td>
-                      <td>10434 ms</td>                            
+                      <td>10434 ms</td>
                       <td>76.64</td>
                       <td>88.09</td>
-                    </tr>    
+                    </tr>
                     <tr>
                       <td>24</td>
                       <td>2020.06.22</td>
                       <td>SkERT-Large (Single model)
                         <p class="light">Skelter Labs</p>
                       </td>
-                      <td>11593 ms</td>                            
+                      <td>11593 ms</td>
                       <td>73.29</td>
                       <td>86.03</td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <td>25</td>
                       <td>2022.09.02</td>
                       <td>LAYN (single model)
                         <p class="light">Naver Search Language and Vision (Soonhwan Kwon & Sunghyun Park</p>
                       </td>
-                      <td>15071 ms</td>                       
+                      <td>15071 ms</td>
                       <td>78.06</td>
                       <td>89.99</td>
                     </tr>
@@ -690,17 +671,17 @@ layout: default
                       <td>EXAONE-LM-v1.0
                         <p class="light">LG AI Research</p>
                       </td>
-                      <td>23020 ms</td>                       
+                      <td>23020 ms</td>
                       <td>79.26</td>
                       <td>90.93</td>
-                    </tr>                       
+                    </tr>
                     <tr>
                       <td bgcolor="#eee">-</td>
-                      <td bgcolor="#eee">2019.09.05</td>                     
+                      <td bgcolor="#eee">2019.09.05</td>
                       <td bgcolor="#eee">
                         <b>Baseline</b>
                       </td>
-                      <td bgcolor="#eee">13484 ms</td>                          
+                      <td bgcolor="#eee">13484 ms</td>
                       <td bgcolor="#eee">30.24</td>
                       <td bgcolor="#eee">45.96</td>
                     </tr>
@@ -711,38 +692,18 @@ layout: default
         </div>
       </div>
     </div>
-
-
-<!--     <div style="background: #ddd">
-    <div class="container last-post">
-    <section>
-        <h5>Latest Post</h5>
-        <ul class="collection">
-        {% for post in site.posts %}
-        <li class="collection-item avatar">
-          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-          <div class="date-post">{{ post.date | date: date_format }}</div>
-          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-          <p>
-             {{ post.content | truncatewords: 10 }}
-          </p>
-          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-        </li>
-        {% endfor %}
-        </ul>  
-    </section>  -->
   </div>
 </div>
 </div>
     </main>
-    
 
-      
-    <!--  Scripts-->                                                                               
+
+
+    <!--  Scripts-->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/materialize.min.js"></script>
 <script src="/js/init.js"></script>
-    
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
