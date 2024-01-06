@@ -120,10 +120,10 @@ layout: default
                   {% assign table_datas = site.data.info | sort: "EM" %}
                   {% for row in table_datas %}
                     {% if forloop.first %}
-                    <tr>
-                      <th class="grey lighten-3">Number</th>
+                    <tr class="grey lighten-3">
+                      <th>Rank</th>
                       {% for pair in row %}
-                        <th class="grey lighten-3">{{ pair[0] }}</th>
+                        <th>{{ pair[0] }}</th>
                       {% endfor %}
                     </tr>
                     {% endif %}
